@@ -1,0 +1,113 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>AI Assistant</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Personal - v2.2.0
+    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+
+  <!-- ======= Portfolio Details ======= -->
+    <main id="main">
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-12 portfolio-info">
+              <br>
+              <h2 style="color:#12d640">Nexus: Real-Time Data Streaming on Kubernetes</h2>
+              <ul>
+                <li><strong>Tech Stack</strong>: Python, JavaScript, HTML/CSS, Apache Kafka, Zookeeper, PostgreSQL, Grafana, Docker, Kubernetes, YAMLr</li>
+                <li><strong>Github URL</strong>: <a href="https://github.com/ozturkibrhm/nexus_project" target="_blank">Project Link</a></li>
+              </ul>
+
+              <p>
+                This was a group project focused on building a <b>real-time data streaming and monitoring platform</b> on top of Kubernetes. 
+                The main goal was to dynamically collect data from WCenter systems based on user-provided IP/port/credentials, 
+                stream it in real time, and make it available for storage, analysis, and visualization.
+              </p>
+              
+              <p>The system architecture consisted of multiple microservices:</p>
+              <ul>
+                <li><b>input-service:</b> Provided a web UI where users entered WCenter connection details, stored as JSON configuration.</li>
+                <li><b>producer-service (Python):</b> Read configs, connected to WCenter, and published raw data into Kafka topics.</li>
+                <li><b>Apache Kafka & Zookeeper:</b> Managed message queues to ensure scalable and durable data pipelines.</li>
+                <li><b>consumer-service (Python):</b> Consumed Kafka messages, processed them, and persisted results into PostgreSQL.</li>
+                <li><b>Grafana Dashboards:</b> Connected to PostgreSQL for real-time visualization and monitoring of ingested data.</li>
+              </ul>
+              
+              <p>
+                The platform was fully containerized and orchestrated with <b>Kubernetes</b>. 
+                Each microservice ran as a <b>Deployment</b>, while Kafka, Zookeeper, and PostgreSQL were deployed as 
+                <b>StatefulSets with persistent storage volumes</b>. 
+                Sensitive configurations (e.g., database and WCenter credentials) were managed using 
+                <b>ConfigMaps</b> and <b>Secrets</b>. Helm charts and YAML manifests automated the deployment process.
+              </p>
+              
+              <p>
+                The project also integrated <b>CI/CD pipelines (Jenkins/GitLab CI)</b> to automate Docker image builds 
+                and Kubernetes deployments. Planned enhancements included <b>Grafana provisioning</b> for automatic 
+                creation of dashboards as soon as new data became available.
+              </p>
+              
+              <p>
+                My key contributions were in designing the <b>data ingestion and consumer pipelines</b>, 
+                implementing <b>Kafka–PostgreSQL integration</b>, and ensuring the Kubernetes manifests 
+                properly supported <b>scalability</b> and <b>persistence</b> requirements.
+              </p>
+              
+
+            </div>
+
+          </div>
+
+        </div>
+      </div><!-- End Portfolio Details -->
+    </main><!-- End #main -->
+
+   <!-- Vendor JS Files -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+
+  </body>
+  </html>

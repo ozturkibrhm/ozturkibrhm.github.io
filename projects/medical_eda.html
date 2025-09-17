@@ -1,0 +1,124 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>DTIS</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Personal - v2.2.0
+    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+
+  <!-- ======= Portfolio Details ======= -->
+    <main id="main">
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-12 portfolio-info">
+              <br>
+              <h2 style="color:#12d640">Medical Dataset – EDA & Preprocessing</h2>
+              <ul>
+                <li><strong>Tech Stack</strong>: Python, Pandas, NumPy, SciPy, Scikit-learn, Seaborn, Matplotlib, RapidFuzz, OpenPyXL </li>
+                <li><strong>Github URL</strong>: <a href="https://github.com/ozturkibrhm/Pusula_Ibrahim_Ozturk" target="_blank">Project Link</a></li>
+              </ul>
+
+              <p>
+                This was an academic project focused on <b>EDA (Exploratory Data Analysis)</b> and 
+                <b>preprocessing</b> of a <b>Physical Medicine & Rehabilitation dataset</b>.  
+                The primary objective was to clean, standardize, and prepare the dataset for modeling, 
+                with the target variable being <b>Treatment Duration (TedaviSuresi)</b>.
+              </p>
+              
+              <p>The project workflow included:</p>
+              <ul>
+                <li><b>Data Exploration:</b> Analyzing 13 features, studying distributions, correlations, and relationships with the target variable.</li>
+                <li><b>Missing Value Handling:</b> Applied multiple strategies such as median imputation, mode replacement, “None” category filling, and group-based imputations.</li>
+                <li><b>Standardization:</b> Splitting multi-valued categorical fields (e.g., allergies, chronic diseases) into normalized token lists.</li>
+                <li><b>Data Cleaning:</b> Outlier detection using IQR, removal of anomalies, and deduplication of patient records.</li>
+                <li><b>Encoding:</b> One-Hot Encoding (OHE) and Top-K token selection to convert categorical features into numerical form.</li>
+                <li><b>Feature Selection:</b> Compared feature subsets for <b>TOP-K = 20, 25, and 30</b>; the best-performing configuration was <b>TOP-K = 25</b>, chosen as the final model-ready dataset.</li>
+              </ul>
+              
+              <p>
+                The final deliverable was a clean and structured dataset: 
+                <code>dataset_model_ready_best_top25.(xlsx|csv)</code>,  
+                fully ready for downstream modeling and predictive analysis.
+              </p>
+              
+              <p><b>Development Environment</b></p>
+              <ul>
+                <li><b>Platform:</b> Kaggle Notebook (Python 3.9+)</li>
+                <li><b>Libraries:</b> Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, RapidFuzz, OpenPyXL</li>
+                <li><b>Artifacts:</b> 
+                  <code>Clean_Data_Case_DT_2025_std.xlsx</code>,  
+                  <code>dataset_gender_filled.csv</code>,  
+                  <code>dataset_final_imputed.csv</code>,  
+                  and final <code>dataset_model_ready_best_top25.xlsx</code>.
+                </li>
+              </ul>
+              
+              <p><b>Execution Steps</b></p>
+              <ol>
+                <li>Load the original dataset: <code>Talent_Academy_Case_DT_2025.xlsx</code>.</li>
+                <li>Perform EDA (distribution plots, correlation heatmaps, target relationships).</li>
+                <li>Preprocess: numeric standardization, categorical encoding, and missing value imputation.</li>
+                <li>Clean anomalies and remove duplicates.</li>
+                <li>Apply encoding & Top-K feature selection.</li>
+                <li>Export the final dataset for model training.</li>
+              </ol>
+              
+              
+
+            </div>
+
+          </div>
+
+        </div>
+      </div><!-- End Portfolio Details -->
+    </main><!-- End #main -->
+
+   <!-- Vendor JS Files -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+
+  </body>
+  </html>

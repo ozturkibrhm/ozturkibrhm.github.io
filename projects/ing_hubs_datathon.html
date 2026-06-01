@@ -1,1 +1,107 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    <title>PasswordCall App</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Personal - v2.2.0
+    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+
+  <!-- ======= Portfolio Details ======= -->
+    <main id="main">
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-12 portfolio-info">
+              <br>
+              <h2 style="color:#12d640">ING Hubs Turkey Datathon: Predictive Banking Churn Architecture (Top 10 Finalist)</h2>
+              <ul>
+                <li><strong>Tech Stack</strong>: Python, AutoGluon, CatBoost, LightGBM, XGBoost, Scikit-Learn, Optuna, Pandas, NumPy, Kaggle Notebooks </li>
+                <li><strong>Project URL</strong>: <a href="https://drive.google.com/file/d/11TJsTq5dxOSHxK6LndGcGHbEHEjr29UD/view?usp=sharing" target="_blank">Project Link</a></li>
+              </ul>
+
+              <p>
+                This project was developed for the official ING Hubs Turkey Datathon, where our team designed an end-to-end predictive machine learning architecture to identify customer churn patterns in banking, securing a Top 10 Finalist position among numerous highly competitive data science teams.
+              </p>
+              
+              <p><b>Data Pipeline</b></p>
+              <ul>
+                <li><b>Data Alignment & Category Handling:</b> Cleaned and aligned categorical features across high-dimensional banking tracking logs, implementing automated frequency thresholding to collapse rare categories into a consolidated bin.</li>
+                <li><b>Correlation-Based Feature Selection:</b> Designed automated feature pruning routines to dynamically drop highly collinear numerical variables (Pearson threshold &gt; 0.99) to optimize model memory footprint and training speed.</li>
+                <li><b>Data Quality & Validation:</b> Managed continuous data validation steps, handling missing values, duplicates, and extreme outliers safely without losing predictive customer signal.</li>
+              </ul>
+              
+              <p><b>Modeling & Ensemble Architecture</b></p>
+              <ul>
+                <li><b>Multi-Layer Stacking:</b> Leveraged a state-of-the-art stacking architecture with multiple model levels (L1 to L3) utilizing an advanced bagged ensemble framework.</li>
+                <li><b>Heterogeneous Model Blend:</b> Systematically combined optimized variants of <b>LightGBM (with Extra Trees variations)</b>, <b>CatBoost</b>, <b>XGBoost</b>, Random Forests, and Deep Learning (NeuralNetTorch) to stabilize prediction probabilities.</li>
+                <li><b>Probability Calibration:</b> Applied <b>Temperature Scaling</b> grid-search calibration on out-of-fold (OOF) validation logits to ensure predicted churn probabilities perfectly aligned with real-world distribution.</li>
+                <li><b>Competition Metrics:</b> Evaluated performance metrics based on Gini, Recall@10%, and Lift@10% to achieve highly generalizable validation scores.</li>
+              </ul>
+              
+              <p>
+                The final solution produced reliable, stable probability distributions and generated a Kaggle-ready <code>submission.csv</code> with calibrated customer churn test predictions.
+              </p>
+              
+              <p><b>My Contributions</b></p>
+              <ul>
+                <li>Designed the complete <b>feature engineering, alignment, and correlation pruning pipeline</b>.</li>
+                <li>Implemented the <b>custom ensemble blending algorithms</b> and Dirichlet-based weight optimization.</li>
+                <li>Integrated <b>Temperature Scaling calibration</b> to ensure robust model generalizability under strict data privacy constraints.</li>
+              </ul>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div><!-- End Portfolio Details -->
+    </main><!-- End #main -->
+
+   <!-- Vendor JS Files -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+
+  </body>
+  </html>
